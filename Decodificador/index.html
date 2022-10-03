@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Base 64 & Cifra de Cezar</title>
+</head>
+
+<body>
+    <header> 
+        <img src="https://sites.google.com/site/encriptacao/_/rsrc/1292331021289/criptologia/era-classica/cifra-de-substituicao/ceasar.png?height=320&width=320" class= "logo" alt="chave">
+        <h1>Base 64 & Cifra de Cezar</h1> </header>
+    <main>
+        <div class= "caixa">
+            <div class="container">
+                <label for="titulo" class= "escolha">Escolha seu decodificador</label>
+                <select id= "opcoes">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="base">Base 64</option>
+                    <option valeu="cifra">Cifra de César</option>
+                </select>
+
+                <fieldset>
+                <label for="radio"> Codificar </label>
+                <input type ="radio" name="radio" class="radio" id="cod1">
+                <label> Decodificar </label>
+                <input type ="radio" name="radio" class="radio" id="cod2">
+                </fieldset>
+
+                <div>
+                <label for="passo"> Passo </label>
+                <input name="passo" type="namber" id="passo">
+                </div>
+
+                <label for="mensagem">MensagemCod</label>
+                <input type="text" id="mensagem">
+
+                <label for="resultado">ResultadoMsg</label>
+                <textarea id="resultado"></textarea>
+
+                <button class="btnResultado" onclick="btn()">Executar</button>
+
+            </div>
+        </div>  
+    </main>
+
+    <footer class= "rodapé">
+        <h4>Todos os direitos reservados © 2021 Resilia - Designed by Suzanne P. Souza</h4>
+    </footer>
+
+    <script src="./global.js"></script>
+    <script src="./base64.js"></script>
+    <script src="./cezar.js"></script>   
+</body>
+
+</html>
